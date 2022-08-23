@@ -13,9 +13,14 @@
     .udemy,.education,.fedEx{
        @include center;
     }
-    .indeed,.elecom{
+    .indeed{
         display: flex !important;
         justify-content: flex-end;
+    }
+    .elecom{
+        display: flex !important;
+        justify-content: flex-end;
+        padding-top: 5px;
     }
     .slick-track{
         display: flex !important;
