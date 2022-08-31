@@ -1,4 +1,7 @@
 .header{
+    nav{
+        position: static;
+    }
     display: flex;
     .appBar{
         background-color: white;
@@ -13,7 +16,6 @@
             }
             .header_items{
                 color: #777777;
-                padding: 5px 24px;
                 text-transform: unset;
                 font-size: 17px;
             }
@@ -25,5 +27,17 @@
         }
     }
 }
+@media (max-width:899px) {
+    .MuiList-root {
+            .MuiListItem-root {
+                margin: 20px 0 !important;
+            }
+        }
 
+}
+@media (max-width:599px) {
+    .header .appBar .toolBar .header_logo{
+        font-size: 25px;
+    }
+}
 

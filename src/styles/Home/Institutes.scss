@@ -6,10 +6,18 @@
         color: #1D1D1D;
     }
     .institute_image{
-        img{
+        .image_one{
             max-width: 100%;
             height: auto;
         }
+        .image_two{
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+    }
+    .institute_btn{
+        font-weight: 600;
     }
     .institute_text{
         padding-left: 50px;
@@ -23,7 +31,7 @@
         }
         .institute_counter{
             display: flex;
-            padding-top: 40px;
+            padding-top: 45px;
             h3{
                 @include heading_counter;
             }
@@ -33,5 +41,62 @@
                 font-weight: 500;
             }
         }
+    }
+}
+
+@media (max-width:1536px) {
+    
+}
+
+@media (max-width:1199px) {
+    .institute .institute_text .institute_counter h3{
+        font-size: 30px;
+    }
+    .institute .institute_text{
+        padding-bottom: 30px;
+    }
+    .institute .institute_text h1{
+        max-width: 95%;
+        font-size: 36px;
+    }
+    .institute .institute_text .institute_counter h6{
+        font-size: 16px;
+    }
+    .institute_image{
+        display: flex;
+        justify-content: center;
+    }
+    .institute_image .image_one {
+            display: none;
+        }
+    
+        .institute_image .image_two {
+            display: block !important;
+        }
+}
+
+@media (max-width:900px) {
+   
+}
+
+@media (max-width:600px) {
+    .institute{
+        padding-top: 50px;
+        .institute_text{
+            padding-left: 20px;
+        }
+        .institute_text{
+            h1 {
+                    font-size: 24px;
+                }
+            .intstitute_p1{
+                font-size: 14px;
+            }
+            .institute_counter h3{
+                font-size: 25px;
+            } 
+        }
+         
+         
     }
 }

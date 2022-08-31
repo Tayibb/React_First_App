@@ -16,7 +16,7 @@
         max-width: 75%;
         font-size: 16px;
         text-align: center;
-        padding: 20px 0;
+        padding: 25px 0;
     }
     h5{
         color: #E8E8E8;
@@ -24,6 +24,29 @@
         text-align: center;
         span{
             padding: 0 7px;
+        }
+    }
+}
+
+
+@media (max-width:1199px) {
+    .footer{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:899px) {
+    .footer {
+            height: 360px;
+        }
+
+}
+
+@media (max-width:600px) {
+    .footer{
+        height: 375px;
+        h1{
+            font-size: 36px;
         }
     }
 }

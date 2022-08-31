@@ -4,18 +4,33 @@
            font-weight: 600;
            color: white;
            position: absolute;
-           top: 44%;
+           top: 40%;
            left: 50%;
            transform: translate(-50%,-44%);
            z-index: 1000;
            text-align: center; 
         }
+        .hero_p{
+           color: #F4F4F4;
+           position: absolute;
+           font-size: 16px;
+           line-height: 30px;
+           top: 47%;
+           left: 50%;
+           transform: translate(-50%,-47%);
+           z-index: 1000;
+           text-align: center; 
+        }
         .slider_img {
-            padding-top: 80px;
-            img{
-                max-width: 100%;
-                height: auto;
-            }
+            padding-top: 17px;
+            .slider_img_desktop {
+                    max-width: 100%;
+                    height: auto;
+                }
+            
+                .slider_img_mobile {
+                    display: none;
+                }
         }
         .hero_btn{
             background-color: #289BDE;
@@ -47,3 +62,151 @@
         }
 }
 
+
+@media (max-width:1536px) {
+
+}
+@media (max-width:1199px){
+    .main_slider{
+        .hero_heading {
+                font-size: 50px;
+            }
+    }
+}
+@media (max-width:899px) {
+    .main_slider {
+            .hero_heading {
+                font-size: 37px;
+                top: 28%;
+                left: 48%;
+                transform: translate(-48%,-16%);
+            }
+            .hero_p {
+            top: 58%;
+            left: 30%;
+            font-size: 15px;
+            transform: translate(-22%, -45%);
+
+        }
+            .hero_btn{
+            top: 83%;
+            left: 50%;
+            transform: translate(-50%,-90%);
+            padding: 7px 27px;
+            font-size: 16px;
+        }
+        }
+        
+}
+@media (max-width:767px) {
+    .main_slider {
+            .hero_heading {
+                font-size: 32px;
+                top: 25%;
+                left: 48%;
+                transform: translate(-48%,-16%);
+            }
+            .hero_p {
+            top: 61%;
+            left: 34%;
+            font-size: 14px;
+            transform: translate(-27%, -45%);
+
+        }
+            .hero_btn{
+            top: 89%;
+            left: 50%;
+            transform: translate(-50%,-90%);
+            padding: 7px 27px;
+            font-size: 16px;
+        }
+    }
+
+}
+@media (max-width: 599px) {
+    .main_slider {
+        .slider_img {
+            padding-top: 5px;
+
+        }
+
+        .hero_heading {
+            font-size: 26px;
+            top: 22%;
+            left: 40%;
+            transform: translate(-34%, -16%);
+        }
+
+        .hero_p {
+            top: 57%;
+            left: 35%;
+            line-height: 20px;
+            font-size: 12px;
+            transform: translate(-28%, -45%);
+        }
+
+        .hero_btn {
+            top: 89%;
+            left: 50%;
+            transform: translate(-50%, -90%);
+            padding: 7px 17px;
+            font-size: 12px;
+        }
+
+        .slick-next {
+            display: none !important;
+        }
+
+        .slick-prev {
+            display: none !important;
+        }
+    }
+}
+@media (max-width:485px) {
+    .main_slider {
+        .slider_img {
+            padding-top: 5px;
+
+            .slider_img_desktop {
+                display: none;
+            }
+
+            .slider_img_mobile {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .hero_heading {
+            font-size: 24px;
+            top: 22%;
+            left: 40%;
+            transform: translate(-34%, -16%);
+        }
+
+        .hero_p {
+            top: 57%;
+            left: 10%;
+            line-height: 20px;
+            font-size: 12px;
+            transform: translate(-5%, -45%);
+
+        }
+
+        .hero_btn {
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -90%);
+            padding: 7px 17px;
+            font-size: 12px;
+        }
+
+        .slick-next {
+            display: none !important;
+        }
+
+        .slick-prev {
+            display: none !important;
+        }
+    }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Container, Grid } from "@mui/material";
 import Commas from "../../images/commas.png";
 import Rating from "../../images/Rating.svg";
 import ClientTwo from "../../images/client_1.svg";
@@ -46,6 +46,7 @@ const feedbackCard = [
         clientProfession: "UI Designer",
     },
 ];
+
 const Feedback = () => {
     const settings = {
         dots: false,
@@ -53,6 +54,22 @@ const Feedback = () => {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
     return (
         <Box className="feedback">
@@ -68,7 +85,7 @@ const Feedback = () => {
                 <Box sx={{ pt: 6 }}>
                     <Slider {...settings} className="slide">
                         {feedbackCard.map((val) => (
-                            <Box className="feedback_card">
+                            <Box className="feedback_card" sx={{ display: { xs: "none", lg: "block" } }}>
                                 <Box sx={{ px: 5, py: 4 }}>
                                     <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                                         <img src={val.imageComma} alt="picture_of_comma" />

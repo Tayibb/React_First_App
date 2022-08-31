@@ -20,7 +20,7 @@ const Companies = () => {
         slidesToScroll: 6,
     };
     return (
-        <Box className="companies">
+        <Box className="companies" sx={{ display: { xs: "none", lg: "block" } }}>
             <Container className="container">
                 <Typography className="poppins" variant="h1">
                     Trusted by over 800+ companies

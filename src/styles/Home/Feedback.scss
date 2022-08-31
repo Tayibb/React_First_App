@@ -1,5 +1,5 @@
 .feedback{
-    padding-top: 80px;
+    padding-top: 65px;
     .slide{
         display: flex !important;
         justify-content: space-between !important;
@@ -18,6 +18,7 @@
     }
     .feedback_card{
         width: 97% !important;
+        margin-left: 10px;
         border: 1px solid #E8E8E8;
         border-radius: 5px;
         .feedback_text{
@@ -36,11 +37,12 @@
         }
     }
     .slick-next{
-        right: 22px;
+        right: 15px;
         top: 46%;
     }
     .slick-prev{
         z-index: 1000;
+        left: -20px;
         top: 46%;
     }
     .slick-next:before {
@@ -50,4 +52,50 @@
         .slick-prev:before {
             content: url('../../images/client_left.svg');
         }
+}
+
+@media (max-width:1536px) {}
+
+@media (max-width:1199px) {
+    .feedback{
+        h2{
+            font-size: 36px;
+        }
+        h6{
+            max-width: 80%;
+        }
+    }
+    
+}
+
+@media (max-width:900px) {
+    .feedback h6{
+        max-width: 80%;
+    }
+    
+    
+}
+
+@media (max-width:600px) {
+    .feedback{
+        padding-top: 60px;
+        h2{
+            font-size: 24px;
+        }
+        h6{
+            max-width: 90%;
+            font-size: 14px;
+            padding-top: 15px;
+        }
+        .feedback_card{
+            margin-left: 5px;
+            .feedback_text{
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+        .slick-prev{
+            left: -15px;
+        }
+    }
 }

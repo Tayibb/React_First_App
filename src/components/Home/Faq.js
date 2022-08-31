@@ -31,7 +31,7 @@ const Faq = () => {
                 <Typography className="poppins" variant="h1">
                     Frequently Asked Questions
                 </Typography>
-                <Box sx={{ display: "flex", justifyContent: "center", mb: 4 }}>
+                <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
                     <Typography className="poppins" variant="h6">
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                     </Typography>

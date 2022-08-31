@@ -15,7 +15,7 @@ function Header(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
+            <Typography className="header_logo" variant="h6" sx={{ my: 2 }}>
                 Pro Edu
             </Typography>
             <Divider />
@@ -28,6 +28,11 @@ function Header(props) {
                     </ListItem>
                 ))}
             </List>
+            <Grid item xs={2} sx={{ display: { xs: "block", sm: "none" } }}>
+                <Button className="header_btn poppins" variant="outlined">
+                    Register
+                </Button>
+            </Grid>
         </Box>
     );
 
@@ -38,28 +43,28 @@ function Header(props) {
             <AppBar className="appBar" component="nav">
                 <Container className="container">
                     <Toolbar className="toolBar">
-                        <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ ml: "auto", display: { sm: "none" } }}>
-                            <MenuIcon></MenuIcon>
-                        </IconButton>
                         <Grid item xs={2}>
-                            <Typography className="header_logo poppins" variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
+                            <Typography className="header_logo poppins" variant="h6" component="div" sx={{ flexGrow: 1, display: { sm: "block" } }}>
                                 Pro Edu
                             </Typography>
                         </Grid>
                         <Grid item xs={8} sx={{ mx: "auto" }}>
-                            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                            <Box sx={{ display: { xs: "none", md: "block" } }}>
                                 {navItems.map((item) => (
-                                    <Button className="header_items poppins" key={item}>
+                                    <Button className="header_items poppins" sx={{ px: { md: 2, lg: 3 } }} key={item}>
                                         {item}
                                     </Button>
                                 ))}
                             </Box>
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={2} sx={{ display: { xs: "none", sm: "block" }, mr: { sm: 2, md: 0 } }}>
                             <Button className="header_btn poppins" variant="outlined">
                                 Register
                             </Button>
                         </Grid>
+                        <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ display: { md: "none" } }}>
+                            <MenuIcon></MenuIcon>
+                        </IconButton>
                     </Toolbar>
                 </Container>
             </AppBar>
@@ -74,7 +79,7 @@ function Header(props) {
                         keepMounted: true, // Better open performance on mobile.
                     }}
                     sx={{
-                        display: { xs: "block", sm: "none" },
+                        display: { xs: "block", md: "none" },
                         "& .MuiDrawer-paper": { boxSizing: "border-box", width: "auto", height: "100vh" },
                     }}
                 >

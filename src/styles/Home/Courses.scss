@@ -5,7 +5,10 @@
         text-align: center;
         max-width: 50%;
     }
-
+    .course_btn_1,.course_btn_2{
+        font-weight: 600;
+        font-size: 18px;
+    }
     .course_paragraph {
         color: #777777;
         text-align: center;
@@ -14,6 +17,10 @@
 
     .course_card_img {
         border-radius: 5px;
+        .mobile{
+            width: 100%;
+            display: none;
+        }
     }
 
     .course_card_text {
@@ -32,6 +39,9 @@
             max-width: 95%;
             padding: 16px 0;
         }
+        .course_special{
+            padding-top: 43px;
+        }
 
         h5 {
             font-size: 18px;
@@ -46,5 +56,85 @@
         background: #289BDE;
         border: 1px solid #289BDE;
         border-radius: 5px;
+    }
+}
+
+@media (max-width:1536px) {
+    .course{
+        .course_card_text {
+                h2 {
+                    font-size: 22px;
+                }
+            }
+    }
+}
+
+@media (max-width:1199px) {
+    .course {
+        .course_hide{
+            display: none;
+        }
+            .course_card_text {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+            .course_heading {
+        font-size: 36px;
+        max-width: 80%;
+    }
+
+    .course_paragraph {
+        max-width: 85%;
+    }
+        }
+}
+
+@media (max-width:899px) {
+    .course{
+        .course_heading {
+                font-size: 30px;
+            }
+        .course_card_text {
+                .course_card_p {
+                    padding: 12px 0;
+                }
+            }
+    } 
+    
+}
+
+@media (max-width:600px) {
+    .course {
+            .course_heading {
+                font-size: 20px;
+            }
+            .course_paragraph{
+                font-size: 14px;
+                max-width: 100%;
+            }
+        }
+    .course_card_img{
+        .mobile {
+                display: block !important;
+            }
+        .desktop{
+            display: none;
+        }
+    }
+    .course .course_card_text h2 {
+        font-size: 16px;
+    }
+    .course .course_card_text .course_card_p {
+        font-size: 14px;
+    }
+    .course .course_btn_2 {
+        font-size: 14px;
+    }
+    .course .course_card_text{
+        height: 170px ;
+    }
+    .course .course_card_text h5{
+        padding-top: 10px;
     }
 }

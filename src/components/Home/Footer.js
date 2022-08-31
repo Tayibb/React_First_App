@@ -18,7 +18,7 @@ const Footer = () => {
                 <Typography className="poppins" variant="h5">
                     Privacy Ploicy<span> | </span>Terms of use
                 </Typography>
-                <Box sx={{ display: "flex", justifyContent: "center" ,pt:3 }}>
+                <Box sx={{ display: "flex", justifyContent: "center", pt: 4 }}>
                     <img src={Social} alt="social_media_plateform_picture" />
                 </Box>
             </Box>

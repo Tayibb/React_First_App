@@ -16,3 +16,35 @@
         padding: 10px 25px;
     }
 }
+@media (max-width:1536px) {}
+
+@media (max-width:1199px) {
+    .register{
+        h3{
+            font-size: 36px;
+        }
+        h6{
+            max-width: 80%;
+        }
+    } 
+}
+
+@media (max-width:900px) {
+    
+}
+
+@media (max-width:600px) {
+    .register {
+            h3 {
+                font-size: 25px;
+            }
+    
+            h6 {
+                max-width: 90%;
+                font-size: 14px;
+            }
+            .register_btn{
+                font-size: 14px;
+            }
+        }
+}
